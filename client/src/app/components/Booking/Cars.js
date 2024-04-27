@@ -14,7 +14,7 @@ const [selectedcar, SetSelectedCar] = useState();
             key={index} onClick={()=>SetSelectedCar(index)}
             className={`p-4 border border-yellow-[1px] rounded-lg m-2  hover:bg-yellow-50 hover:cursor-pointer ${(index==selectedcar ? 'bg-yellow-100' : null)}`}
           >
-            <img src={item.image} alt={item.name} width={90} height={100} />
+            <img src={item.image} alt={item.name} width={90} height={100} className="sm:w-10 lg:w-20" />
             <h2 className="text-[12px] font-bold mt-2">{item.name}</h2>
             <span className="text-yellow-500 text-[12px] font-bold ">{item.charges}</span>
           </div>
