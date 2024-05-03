@@ -1,7 +1,7 @@
 import Navbar from '../components/navbar/page'
-import Trip from '../Trip/page';
-import Footer from '../components/Footer/page';
 
+import Footer from '../components/Footer/page';
+import Home1 from '../components/home/page';
 
 const page = () => {
   return (
@@ -9,8 +9,11 @@ const page = () => {
 
 
         <Navbar />
-        <Trip />
-        <Footer />
+
+
+        <Home1 />
+       <Footer />
+        
     </div>
   )
 }

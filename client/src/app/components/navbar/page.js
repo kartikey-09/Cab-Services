@@ -12,7 +12,7 @@ const page = () => {
   const menucss =
     "block py-2 px-3 text-gray-800  rounded  md:hover:bg-transparent hover:text-white dark:border-gray-700 hover:bg-yellow-400";
   const menucss1 =
-    "block py-2 px-3 text-gray-800 rounded border border-yellow-400  hover:text-white dark:border-gray-700 hover:bg-yellow-400";
+    "block py-2 px-1 text-gray-800 hover:border-b-2 border-[#ff9f00] ";
 
   return (
     <div>
@@ -22,9 +22,9 @@ const page = () => {
             href="#"
             class="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <FaCarSide className=" w-full h-10 text-yellow-400" />
+            <FaCarSide className=" w-full h-10 primary" />
 
-            <span class="self-center text-2xl text-yellow-400 border-[1px] py-1 px-1 rounded-md font-semibold whitespace-nowrap dark:text-white">
+            <span class="self-center text-2xl primary border-[1px] py-1 px-1 rounded-md font-semibold whitespace-nowrap dark:text-white">
               SwiftGO
             </span>
           </a>
@@ -35,12 +35,12 @@ const page = () => {
           >
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-yellow-400 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <a href="#" className={menucss1} aria-current="page">
+                <a href="/home" className={menucss1} aria-current="page">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className={menucss1}>
+                <a href="/trip" className={menucss1}>
                   TRip
                 </a>
               </li>
